@@ -1,0 +1,82 @@
+:root {
+  font-size: 1em;
+}
+
+body {
+  background-color: #14131a;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: auto;
+  max-width: 71.25rem;
+}
+
+.header {
+  margin-bottom: 5rem;
+  padding-top: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo__link {
+  margin-right: 3.125rem;
+  display: inline-block;
+}
+
+.nav__menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  list-style: none;
+}
+
+.nav__menu--item {
+  margin-right: 1.875rem;
+}
+
+.nav__menu--link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .5);
+}
+
+.movie__date {
+  margin-bottom: 2.375rem;
+  display: block;
+
+  font-size: 1.5rem;
+  line-height: 1.17;
+  color: rgba(255, 255, 255, .8);
+}
+
+.movie__description {
+  margin-top: 2.5rem;
+  max-width: 26.44rem;
+
+  font-size: 1rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, .8);
+}
+
+/* ==================== fonts ==================== */
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/RobotoRegular.woff) format(woff);
+  src: url(/fonts/RobotoRegular.ttf) format(truetype);
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/RobotoBold.woff) format(woff);
+  src: url(/fonts/RobotoBold.ttf) format(truetype);
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+}
