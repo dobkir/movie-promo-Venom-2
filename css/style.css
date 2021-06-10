@@ -3,8 +3,10 @@
 }
 
 body {
-  color: #fff;
   font-family: "Roboto", sans-serif;
+  color: #fff;
+
+  background-color: #14131a;
 }
 
 .container {
@@ -96,8 +98,115 @@ body {
 
 .blood {
   background: url('../images/blood.png') no-repeat top right,
-    #14131a url('../images/background.jpg') no-repeat 0 0 / cover;
+    url('../images/background.jpg') no-repeat 0 0 / cover;
 }
+
+.primary-bg {
+  background: url('../images/background.jpg') no-repeat 0 0 / cover;
+}
+
+/* ==================== about page ==================== */
+
+.content {
+  display: flex;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+.content__title {
+  margin-bottom: .625em;
+
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.313;
+  color: rgba(255, 255, 255, .8);
+}
+
+.content__subtitle {
+  margin-top: 0;
+  margin-bottom: .94em;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, .8);
+}
+
+.content__text {
+  margin-bottom: 1.875em;
+  max-width: 26.44rem;
+
+  line-height: 1.4;
+  color: rgba(255, 255, 255, .8);
+}
+
+.content .list {
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.list__item {
+  line-height: 1.5;
+}
+
+.list .column-2 {
+  max-width: 21.875rem;
+
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+  column-gap: 1.25rem;
+}
+
+.content .trailer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12.813em;
+  width: 22.813em;
+
+  background: url('../images/trailer-cover.jpg') no-repeat center / contain;
+  border-radius: .32em;
+}
+
+.trailer .play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.813em;
+  width: 2.813em;
+
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.poster__wrapper {
+  display: flex;
+  align-items: start;
+}
+
+.poster {
+  margin-right: 1.875rem;
+  width: 22.625rem;
+
+  border-radius: .32rem;
+}
+
+.poster__wrapper .content__subtitle {
+  margin-bottom: .31rem;
+}
+
+.poster__wrapper .list {
+  margin: 0 0 1.25rem 0;
+}
+
+/* ==================== End of about page ==================== */
+
+
 
 /* ==================== fonts ==================== */
 @font-face {
