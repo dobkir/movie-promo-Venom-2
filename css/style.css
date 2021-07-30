@@ -228,6 +228,77 @@ img {
 
 
 
+/* ==================== actors page ==================== */
+
+.actors__page--header {
+  margin-bottom: 1.5em;
+}
+
+.actors__subtitles {
+  display: flex;
+}
+
+.actors__subtitle--first {
+  margin-bottom: 0;
+  flex-basis: 50%;
+}
+
+.actors__subtitle--second,
+.actors__subtitle--third {
+  margin-bottom: .3rem;
+  flex-basis: 25%;
+}
+
+.actors {
+  display: flex;
+  width: 90vw;
+}
+
+.actors__list {
+  flex-basis: 25%;
+}
+
+.actor__about {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.actor__foto {
+  flex-basis: content;
+
+  border: 2px solid #fff;
+  box-shadow: inset 0 7px 20px rgb(0 0 0 / 25%);
+  border-radius: 50%;
+
+  transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+}
+
+.actor__foto:hover,
+.actor__foto:focus {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+.actor__info {
+  margin: auto 0;
+  padding-left: 20px;
+  flex-basis: 75%;
+
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+.actor__name {
+  margin: 0;
+}
+
+/* ==================== End of actors page ==================== */
+
 .menu__button {
   display: none;
 }
