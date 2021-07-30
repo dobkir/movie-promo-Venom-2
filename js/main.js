@@ -1,3 +1,16 @@
+//============ Active nav link on the corresponding page ============//
+
+const navLink = document.querySelectorAll('.nav__menu--link');
+for (let i = 0; i < navLink.length; i++)
+  if (navLink[i].href == document.URL.split(/[\?#]/)[0]) {
+    navLink[i].style.cssText = 'color: rgba(255, 255, 255, .9);';
+  }
+
+//========= End of active nav link on the corresponding page ========//
+
+
+//======================= Mobile menu toggle =======================//
+
 const menuButton = document.querySelector('.menu__button');
 const menu = document.querySelector('.nav__menu');
 const menuCloseButton = document.querySelector('.menu__close');
@@ -12,7 +25,9 @@ menuCloseButton.addEventListener('click', () => {
   menuCloseButton.classList.remove('is-active');
 });
 
-//==================== The widget-consultant ====================//
+//=================== End of Mobile menu toggle ===================//
+
+//===================== The widget-consultant =====================//
 
 const hideForm = document.querySelector('.hide-form');
 const orderTicket = document.querySelector('.order-ticket');
@@ -128,4 +143,4 @@ orderTicketForm.addEventListener('submit', (event) => {
 
 });
 
-//================= End of the widget-consultant =================//
+//================== End of the widget-consultant ==================//
