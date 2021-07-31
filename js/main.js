@@ -1,3 +1,4 @@
+'use strict';
 //============ Active nav link on the corresponding page ============//
 
 const navLink = document.querySelectorAll('.nav__menu--link');

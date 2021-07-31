@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Премьера - Venom 2</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="primary-bg">
+
+  <div class="container">
+    <header class="header actors__page--header">
+      <a href="index.html" class="logo__link">
+        <img class="logo__image" src="images/logo.png" alt="logo: Venom" width="46" height="71">
+      </a>
+      <nav class="nav">
+        <butoon class="menu__button">
+          <span class="menu__button--text">меню</span>
+          <img class="menu__button--icon" src="images/menu.svg" alt="icon: burger menu">
+        </butoon>
+        <!-- /.menu__button -->
+        <button class="menu__close">
+          <span class="menu__close--text">закрыть</span>
+          <img class="menu__close--icon" src="images/arrow.svg" alt="icon: arrow right">
+        </button>
+        <!-- /.menu__close -->
+        <ul class="nav__menu">
+          <li class="nav__menu--item">
+            <a class="nav__menu--link" href="about.html">о фильме</a>
+          </li>
+
+          <li class="nav__menu--item">
+            <a class="nav__menu--link" href="trailer.html">трейлер</a>
+          </li>
+
+          <li class="nav__menu--item">
+            <a class="nav__menu--link" href="actors.html">актеры</a>
+          </li>
+
+          <li class="nav__menu--item">
+            <a class="nav__menu--link" href="premiere.html">премьера</a>
+          </li>
+        </ul>
+        <!-- /.nav__menu -->
+      </nav>
+    </header>
+
+    <div class="content content--premiere">
+      <div class="col">
+        <h2 class="content__title">Премьера фильма</h2>
+        <span class="movie__date">16 сентября 2021 в кинотеатрах</span>
+        <p class="content__text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного
+          суперзлодея из комиксов Marvel.</p>
+        <div class="eTimer"></div>
+      </div>
+      <!-- /.col -->
+
+      <div class="col col--ticket__form">
+        <div class="order-ticket">
+          <form class="order-ticket__form">
+            <fieldset class="order-ticket__form-wrapper">
+              <legend class="order-ticket__title">Заполните форму</legend>
+              <small class="order-ticket__description">И получите на почту расписание ближайших сеансов в вашем городе и
+                возможные акции</small>
+              <label class="order-ticket__label">
+                <input class="order-ticket__input" type="text" required name="name">
+                <span class="order-ticket__label-text">Имя</span>
+              </label>
+              <label class="order-ticket__label">
+                <input class="order-ticket__input" type="text" name="surname">
+                <span class="order-ticket__label-text">Фамилия</span>
+              </label>
+              <label class="order-ticket__label">
+                <input class="order-ticket__input" type="text" required name="city">
+                <span class="order-ticket__label-text">Город</span>
+              </label>
+              <label class="order-ticket__label">
+                <input class="order-ticket__input" type="email" required name="mail">
+                <span class="order-ticket__label-text">e-mail</span>
+              </label>
+              <label class="order-ticket__label">
+                <input class="order-ticket__checkbox" type="checkbox" required name="personal" value="agree">
+                <span class="order-ticket__label-checkbox-text">Я согласен на обработку моих <a href="#">персональных
+                    данных</a></span>
+              </label>
+              <button>Отправить</button>
+            </fieldset>
+            <div class="order-ticket__preloader-wrapper">
+              <video loop muted autoplay playsinline src="images/6.mp4" type="video/mp4"></video>
+            </div>
+            <fieldset class="order-ticket__thanks-wrapper">
+              <legend>Спасибо <span class="order-ticket__thanks-name">-имя-</span></legend>
+              <p>Вам на почту в скором времени будет отправлено письмо с расписание сеансов в вашем городе</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <!-- /.col -->
+
+    </div>
+    <!-- /.content -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://e-timer.ru/js/etimer.js"></script>
+    <script src="js/eTimer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

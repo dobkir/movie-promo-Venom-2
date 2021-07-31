@@ -146,6 +146,7 @@ img {
 }
 
 .content__title {
+  margin-top: 0;
   margin-bottom: .625em;
 
   font-size: 2rem;
@@ -169,7 +170,7 @@ img {
   color: rgba(255, 255, 255, .8);
 }
 
-.content .list {
+.list {
   padding: 0;
 
   list-style-type: none;
@@ -179,7 +180,7 @@ img {
   line-height: 1.5;
 }
 
-.list .column-2 {
+.column-2 {
   max-width: 21.875rem;
 
   -webkit-column-count: 2;
@@ -190,7 +191,7 @@ img {
   column-gap: 1.25rem;
 }
 
-.content .trailer {
+.content__trailer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,13 +251,12 @@ img {
 
 .actors__subtitle--first {
   margin-bottom: 0;
-  flex-basis: 50%;
 }
 
 .actors__subtitle--second,
 .actors__subtitle--third {
   margin-bottom: .3rem;
-  flex-basis: 25%;
+  flex-basis: 50%;
 }
 
 .actors {
@@ -264,8 +264,18 @@ img {
   width: 90vw;
 }
 
+.actors__main {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.actors__direction {
+  display: flex;
+  flex-basis: 50%;
+}
+
 .actors__list {
-  flex-basis: 25%;
+  flex-basis: 50%;
 }
 
 .actor__about {
@@ -314,24 +324,15 @@ img {
 /* ======================= Trailer page ======================= */
 
 .embed__trailer {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-.embed__trailer::before {
-  content: "";
-  display: block;
-  padding-top: 46%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70vh;
 }
 
 .iframe {
-  width: 82%;
+  width: 80%;
   height: 100%;
-
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 
@@ -344,7 +345,11 @@ img {
   display: none;
 }
 
-
+.col--ticket__form {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
 
 /* ================= The widget-consultant ================= */
 .hide-form {
@@ -476,6 +481,10 @@ img {
     padding-bottom: 5%;
   }
 
+  .content--premiere {
+    align-items: center;
+  }
+
   .col {
     margin-bottom: 5%;
   }
@@ -487,6 +496,16 @@ img {
   .movie {
     margin-top: 5%;
   }
+
+  .actor__foto {
+    width: 70px;
+    height: 70px;
+  }
+
+  .actor__info {
+    padding-left: 10px;
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -497,6 +516,10 @@ img {
 
   .venom {
     top: 10%;
+  }
+
+  .actors {
+    flex-direction: column;
   }
 }
 
