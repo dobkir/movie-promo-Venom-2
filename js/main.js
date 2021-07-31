@@ -1,9 +1,14 @@
 //============ Active nav link on the corresponding page ============//
 
 const navLink = document.querySelectorAll('.nav__menu--link');
+const pageWidth = document.documentElement.scrollWidth;
+
 for (let i = 0; i < navLink.length; i++)
   if (navLink[i].href == document.URL.split(/[\?#]/)[0]) {
     navLink[i].style.cssText = 'color: rgba(255, 255, 255, .9);';
+    if (pageWidth < 576) {
+      navLink[i].style.cssText = 'color: rgba(17, 8, 66, .5);';
+    }
   }
 
 //========= End of active nav link on the corresponding page ========//

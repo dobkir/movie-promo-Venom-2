@@ -46,6 +46,7 @@ img {
   display: flex;
 
   list-style: none;
+  z-index: 1;
 }
 
 .nav__menu--item {
@@ -134,7 +135,7 @@ img {
   background: url('../images/background.jpg') no-repeat 0 0 / cover;
 }
 
-/* ==================== about page ==================== */
+/* ======================= about page ======================= */
 
 .content {
   display: flex;
@@ -237,7 +238,7 @@ img {
 
 
 
-/* ==================== actors page ==================== */
+/* ======================= actors page ======================= */
 
 .actors__page--header {
   margin-bottom: 1.5em;
@@ -308,6 +309,33 @@ img {
 
 /* ==================== End of actors page ==================== */
 
+
+
+/* ======================= Trailer page ======================= */
+
+.embed__trailer {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.embed__trailer::before {
+  content: "";
+  display: block;
+  padding-top: 46%;
+}
+
+.iframe {
+  width: 82%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* =================== End of Trailer page ==================== */
 .menu__button {
   display: none;
 }
@@ -331,6 +359,7 @@ img {
   -webkit-transition: bottom 0.5s linear;
   -o-transition: bottom 0.5s linear;
   transition: bottom 0.5s linear;
+  z-index: 2;
 }
 
 .hide-form-active {
@@ -456,7 +485,7 @@ img {
   }
 
   .movie {
-    margin-top: 20%;
+    margin-top: 5%;
   }
 }
 
@@ -508,7 +537,11 @@ img {
   }
 
   .nav__menu--link {
-    color: #110842;
+    color: rgb(17, 8, 66);
+  }
+
+  .nav__menu--link:active {
+    color: rgba(17, 8, 66, .5);
   }
 
   .menu__button {

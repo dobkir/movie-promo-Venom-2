@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>О фильме - Venom 2</title>
+  <title>Трейлер - Venom 2</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="primary-bg">
+<body class="blood">
 
   <div class="container">
-    <header class="header">
+    <header class="header actors__page--header">
       <a href="/index.html" class="logo__link">
         <img class="logo__image" src="images/logo.png" alt="logo: Venom" width="46" height="71">
       </a>
@@ -49,68 +49,22 @@
       </nav>
     </header>
 
-    <div class="content">
-      <div class="col">
-        <h2 class="content__title">О фильме</h2>
-        <p class="content__text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного
-          суперзлодея из комиксов Marvel.</p>
-        <h3 class="content__subtitle">В главных ролях:</h3>
-        <ul class="list column-2">
-          <li class="list__item">Том Харди</li>
-          <li class="list__item">Мишель Уильямс</li>
-          <li class="list__item">Вуди Харрельсон</li>
-          <li class="list__item">Наоми Харрис</li>
-          <li class="list__item">Стивен Грэм</li>
-          <li class="list__item">Рейд Скотт</li>
-          <li class="list__item">Эд Кейр</li>
-          <li class="list__item">Шон Делани</li>
-          <li class="list__item">Уилльям Барбо</li>
-          <li class="list__item">Пегги Лу</li>
-        </ul>
-        <!-- /.list -->
-        <div class="trailer">
-          <div class="play">
-            <a data-fancybox href="https://www.youtube.com/watch?v=kOF4p_bCLJs">
-              <img class="play__icon" src="images/play.svg" alt="icon: play">
-            </a>
-          </div>
-        </div>
-        <!-- /.trailer -->
+    <div class="movie">
+      <span class="movie__date">16 сентября 2021 в кинотеатрах</span>
+      <div class="embed__trailer">
+        <iframe class="iframe" src="https://www.youtube.com/embed/kOF4p_bCLJs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
-      <!-- /.col -->
-      <div class="col">
-        <div class="poster__wrapper">
-          <img class="poster" src="images/poster.jpg" alt="photo: poster venom 2">
-          <div class="creators">
-            <h3 class="content__subtitle">Режиссер</h3>
-            <ul class="list">
-              <li class="list__item">Энди Серкис</li>
-            </ul>
-            <!-- /.list -->
-            <h3 class="content__subtitle">Сценарий</h3>
-            <ul class="list">
-              <li class="list__item">Келли Марсел</li>
-              <li class="list__item">Том Харди</li>
-            </ul>
-            <!-- /.list -->
-            <h3 class="content__subtitle">Продюсеры</h3>
-            <ul class="list">
-              <li class="list__item">Ави Арад</li>
-              <li class="list__item">Том Харди</li>
-              <li class="list__item">Келли Марсел</li>
-            </ul>
-            <!-- /.list -->
-          </div>
-          <!-- /.creators -->
-        </div>
-        <!-- /.poster__wrapper -->
-      </div>
-      <!-- /.col -->
     </div>
-    <!-- /.content -->
 
   </div>
+  <!-- /.movie -->
+  </div>
   <!-- /.container -->
+
+  <img class="venom" src="images/venom.png" alt="photo: venom">
 
   <!--+++++++++++++++++ The widget-consultant +++++++++++++++++-->
 
@@ -161,8 +115,7 @@
   <!--++++++++++++++ End of the widget-consultant ++++++++++++++-->
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
 
   <script src="js/main.js"></script>
 </body>
