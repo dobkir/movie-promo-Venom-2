@@ -351,6 +351,10 @@ img {
   align-items: center;
 }
 
+.privacy_rus {
+  line-height: 1.4;
+}
+
 /* ================= The widget-consultant ================= */
 .hide-form {
   -webkit-box-sizing: border-box;

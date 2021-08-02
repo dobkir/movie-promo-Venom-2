@@ -29,7 +29,7 @@ export const addHideForm = () => {
           </label>
           <label class="order-ticket__label">
             <input class="order-ticket__checkbox" type="checkbox" required name="personal" value="agree">
-            <span class="order-ticket__label-checkbox-text">Я согласен на обработку моих <a href="#">персональных
+            <span class="order-ticket__label-checkbox-text">Я согласен на обработку моих <a href="privacy-rus.html">персональных
                 данных</a></span>
           </label>
           <button>Отправить</button>
