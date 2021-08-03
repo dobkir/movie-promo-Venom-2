@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venom 2. Главная страница</title>
+  <title data-translate="index-title">Venom 2. Главная страница</title>
   <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
   <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -28,30 +28,37 @@
       </a>
       <nav class="nav">
         <butoon class="menu__button">
-          <span class="menu__button--text">меню</span>
+          <span class="menu__button--text" data-translate="menu-menu">меню</span>
           <img class="menu__button--icon" src="images/menu.svg" alt="icon: burger menu">
         </butoon>
         <!-- /.menu__button -->
         <button class="menu__close">
-          <span class="menu__close--text">закрыть</span>
+          <span class="menu__close--text" data-translate="menu-close">закрыть</span>
           <img class="menu__close--icon" src="images/arrow.svg" alt="icon: arrow right">
         </button>
         <!-- /.menu__close -->
         <ul class="nav__menu">
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="about.html">о фильме</a>
+            <a class="nav__menu--link" data-translate="menu-about" href="about.html">о фильме</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="trailer.html">трейлер</a>
+            <a class="nav__menu--link" data-translate="menu-trailer" href="trailer.html">трейлер</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="actors.html">актеры</a>
+            <a class="nav__menu--link" data-translate="menu-actors" href="actors.html">актеры</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="premiere.html">премьера</a>
+            <a class="nav__menu--link" data-translate="menu-premiere" href="premiere.html">премьера</a>
+          </li>
+
+          <li class="nav__menu--item">
+            <select class="change-lang">
+              <option class="change-lang--option" value="ru" selected>RU</option>
+              <option class="change-lang--option" value="en">EN</option>
+            </select>
           </li>
         </ul>
         <!-- /.nav__menu -->
@@ -60,9 +67,9 @@
 
     <div class="movie">
       <div class="movie__title">
-        <span class="movie__date">16 сентября 2021</span>
+        <span class="movie__date" data-translate="movie-date">16 сентября 2021</span>
         <img class="movie__logo" src="images/venom-2.svg" alt="logo: Venom-2">
-        <p class="movie__description">
+        <p class="movie__description" data-translate="movie-description">
           В настырном журналисте по-прежнему живет симбиот.
           Том Харди в образе обаятельного суперзлодея из комиксов Marvel.
         </p>
@@ -71,11 +78,11 @@
       <div class="button__group">
         <a data-fancybox href="https://www.youtube.com/watch?v=kOF4p_bCLJs" class="button button__primary">
           <img class="button__icon" src="images/play.svg" alt="icon: play" width="15px" height="15px">
-          <span class="button__text">смотреть трейлер</span>
+          <span class="button__text" data-translate="watch-trailer-button">смотреть трейлер</span>
         </a>
         <a href="trailer.html" class="button button__link">
           <img class="button__icon" src="images/ticket.svg" alt="icon: ticket" width="15px" height="15px">
-          <span class="button__text">билеты на премьеру</span>
+          <span class="button__text" data-translate="premiere-tickets-button">билеты на премьеру</span>
         </a>
       </div>
       <!-- /.button__group -->
@@ -90,6 +97,7 @@
   <script src="js/jquery.fancybox.min.js"></script>
 
   <script src="js/main.js" type="module"></script>
+  <script src="js/changeLanguage.js" type="module"></script>
 </body>
 
 </html>

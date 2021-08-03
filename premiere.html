@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Премьера - Venom 2</title>
+  <title data-translate="premiere-title">Venom 2. Премьера</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,30 +19,37 @@
       </a>
       <nav class="nav">
         <butoon class="menu__button">
-          <span class="menu__button--text">меню</span>
+          <span class="menu__button--text" data-translate="menu-menu">меню</span>
           <img class="menu__button--icon" src="images/menu.svg" alt="icon: burger menu">
         </butoon>
         <!-- /.menu__button -->
         <button class="menu__close">
-          <span class="menu__close--text">закрыть</span>
+          <span class="menu__close--text" data-translate="menu-close">закрыть</span>
           <img class="menu__close--icon" src="images/arrow.svg" alt="icon: arrow right">
         </button>
         <!-- /.menu__close -->
         <ul class="nav__menu">
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="about.html">о фильме</a>
+            <a class="nav__menu--link" data-translate="menu-about" href="about.html">о фильме</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="trailer.html">трейлер</a>
+            <a class="nav__menu--link" data-translate="menu-trailer" href="trailer.html">трейлер</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="actors.html">актеры</a>
+            <a class="nav__menu--link" data-translate="menu-actors" href="actors.html">актеры</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="premiere.html">премьера</a>
+            <a class="nav__menu--link" data-translate="menu-premiere" href="premiere.html">премьера</a>
+          </li>
+
+          <li class="nav__menu--item">
+            <select class="change-lang">
+              <option class="change-lang--option" value="ru" selected>RU</option>
+              <option class="change-lang--option" value="en">EN</option>
+            </select>
           </li>
         </ul>
         <!-- /.nav__menu -->
@@ -51,9 +58,10 @@
 
     <div class="content content--premiere">
       <div class="col">
-        <h2 class="content__title">Премьера фильма</h2>
-        <span class="movie__date">16 сентября 2021 в кинотеатрах</span>
-        <p class="content__text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного
+        <h2 class="content__title" data-translate="premiere-content-title">Премьера фильма</h2>
+        <span class="movie__date" data-translate="movie-date-full">16 сентября 2021 в кинотеатрах</span>
+        <p class="content__text" data-translate="movie-description">В настырном журналисте по-прежнему живет симбиот.
+          Том Харди в образе обаятельного
           суперзлодея из комиксов Marvel.</p>
         <div class="eTimer"></div>
       </div>
@@ -63,39 +71,41 @@
         <div class="order-ticket">
           <form class="order-ticket__form">
             <fieldset class="order-ticket__form-wrapper">
-              <legend class="order-ticket__title">Заполните форму</legend>
-              <small class="order-ticket__description">И получите на почту расписание ближайших сеансов в вашем городе и
-                возможные акции</small>
+              <legend class="order-ticket__title" data-translate="form-welcome">Заполните форму</legend>
+              <small class="order-ticket__description" data-translate="form-descritpion">И получите по почте расписание
+                ближайших киносеансов в вашем городе и возможные акции.</small>
               <label class="order-ticket__label">
                 <input class="order-ticket__input" type="text" required name="name">
-                <span class="order-ticket__label-text">Имя</span>
+                <span class="order-ticket__label-text" data-translate="form-name">Имя</span>
               </label>
               <label class="order-ticket__label">
                 <input class="order-ticket__input" type="text" name="surname">
-                <span class="order-ticket__label-text">Фамилия</span>
+                <span class="order-ticket__label-text" data-translate="form-surname">Фамилия</span>
               </label>
               <label class="order-ticket__label">
                 <input class="order-ticket__input" type="text" required name="city">
-                <span class="order-ticket__label-text">Город</span>
+                <span class="order-ticket__label-text" data-translate="form-city">Город</span>
               </label>
               <label class="order-ticket__label">
                 <input class="order-ticket__input" type="email" required name="mail">
-                <span class="order-ticket__label-text">e-mail</span>
+                <span class="order-ticket__label-text" data-translate="form-e-mail">e-mail</span>
               </label>
               <label class="order-ticket__label">
                 <input class="order-ticket__checkbox" type="checkbox" required name="personal" value="agree">
-                <span class="order-ticket__label-checkbox-text">Я согласен на обработку моих <a
-                    href="privacy-rus.html">персональных
-                    данных</a></span>
+                <span class="order-ticket__label-checkbox-text" data-translate="form-agreement">Я согласен на обработку
+                  моих </span><a href="privacy-rus.html" data-translate="form-personal-data">персональных
+                  данных</a>
               </label>
-              <button>Отправить</button>
+              <button data-translate="form-send">Отправить</button>
             </fieldset>
             <div class="order-ticket__preloader-wrapper">
               <video loop muted autoplay playsinline src="images/6.mp4" type="video/mp4"></video>
             </div>
             <fieldset class="order-ticket__thanks-wrapper">
-              <legend>Спасибо <span class="order-ticket__thanks-name">-имя-</span></legend>
-              <p>Вам на почту в скором времени будет отправлено письмо с расписание сеансов в вашем городе</p>
+              <legend data-translate="form-thanks">Спасибо <span class="order-ticket__thanks-name"
+                  data-translate="form-name">-имя-</span></legend>
+              <p data-translate="form-sending-description">Вам на почту в скором времени будет отправлено письмо с
+                расписанием сеансов в вашем городе</p>
             </fieldset>
           </form>
         </div>
@@ -111,6 +121,7 @@
     <script src="https://e-timer.ru/js/etimer.js"></script>
     <script src="js/eTimer.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/changeLanguage.js" type="module"></script>
 </body>
 
 </html>

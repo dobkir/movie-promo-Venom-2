@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Трейлер - Venom 2</title>
+  <title data-translate="trailer-title">Venom 2. Трейлер</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,30 +19,37 @@
       </a>
       <nav class="nav">
         <butoon class="menu__button">
-          <span class="menu__button--text">меню</span>
+          <span class="menu__button--text" data-translate="menu-menu">меню</span>
           <img class="menu__button--icon" src="images/menu.svg" alt="icon: burger menu">
         </butoon>
         <!-- /.menu__button -->
         <button class="menu__close">
-          <span class="menu__close--text">закрыть</span>
+          <span class="menu__close--text" data-translate="menu-close">закрыть</span>
           <img class="menu__close--icon" src="images/arrow.svg" alt="icon: arrow right">
         </button>
         <!-- /.menu__close -->
         <ul class="nav__menu">
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="about.html">о фильме</a>
+            <a class="nav__menu--link" data-translate="menu-about" href="about.html">о фильме</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="trailer.html">трейлер</a>
+            <a class="nav__menu--link" data-translate="menu-trailer" href="trailer.html">трейлер</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="actors.html">актеры</a>
+            <a class="nav__menu--link" data-translate="menu-actors" href="actors.html">актеры</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="premiere.html">премьера</a>
+            <a class="nav__menu--link" data-translate="menu-premiere" href="premiere.html">премьера</a>
+          </li>
+
+          <li class="nav__menu--item">
+            <select class="change-lang">
+              <option class="change-lang--option" value="ru" selected>RU</option>
+              <option class="change-lang--option" value="en">EN</option>
+            </select>
           </li>
         </ul>
         <!-- /.nav__menu -->
@@ -50,7 +57,7 @@
     </header>
 
     <div class="movie">
-      <span class="movie__date">16 сентября 2021 в кинотеатрах</span>
+      <span class="movie__date" data-translate="movie-date-full">16 сентября 2021 в кинотеатрах</span>
       <div class="embed__trailer">
         <iframe class="iframe" src="https://www.youtube.com/embed/kOF4p_bCLJs" title="YouTube video player"
           frameborder="0"
@@ -68,6 +75,7 @@
   <script src="js/jquery.fancybox.min.js"></script>
 
   <script src="js/main.js" type="module"></script>
+  <script src="js/changeLanguage.js" type="module"></script>
 </body>
 
 </html>

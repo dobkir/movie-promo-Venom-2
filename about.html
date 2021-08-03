@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>О фильме - Venom 2</title>
+  <title data-translate="about-title">Venom 2. О фильме</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,30 +19,37 @@
       </a>
       <nav class="nav">
         <butoon class="menu__button">
-          <span class="menu__button--text">меню</span>
+          <span class="menu__button--text" data-translate="menu-menu">меню</span>
           <img class="menu__button--icon" src="images/menu.svg" alt="icon: burger menu">
         </butoon>
         <!-- /.menu__button -->
         <button class="menu__close">
-          <span class="menu__close--text">закрыть</span>
+          <span class="menu__close--text" data-translate="menu-close">закрыть</span>
           <img class="menu__close--icon" src="images/arrow.svg" alt="icon: arrow right">
         </button>
         <!-- /.menu__close -->
         <ul class="nav__menu">
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="about.html">о фильме</a>
+            <a class="nav__menu--link" data-translate="menu-about" href="about.html">о фильме</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="trailer.html">трейлер</a>
+            <a class="nav__menu--link" data-translate="menu-trailer" href="trailer.html">трейлер</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="actors.html">актеры</a>
+            <a class="nav__menu--link" data-translate="menu-actors" href="actors.html">актеры</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="premiere.html">премьера</a>
+            <a class="nav__menu--link" data-translate="menu-premiere" href="premiere.html">премьера</a>
+          </li>
+
+          <li class="nav__menu--item">
+            <select class="change-lang">
+              <option class="change-lang--option" value="ru" selected>RU</option>
+              <option class="change-lang--option" value="en">EN</option>
+            </select>
           </li>
         </ul>
         <!-- /.nav__menu -->
@@ -51,28 +58,29 @@
 
     <div class="content">
       <div class="col">
-        <h2 class="content__title">О фильме</h2>
-        <p class="content__text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного
+        <h2 class="content__title" data-translate="about-movie-content-title">О фильме</h2>
+        <p class="content__text" data-translate="movie-description">В настырном журналисте по-прежнему живет симбиот.
+          Том Харди в образе обаятельного
           суперзлодея из комиксов Marvel.</p>
-        <h3 class="content__subtitle">В главных ролях:</h3>
+        <h3 class="content__subtitle" data-translate="movie-starring">В главных ролях:</h3>
         <div class="actors__main column-2">
           <div class="actors__list">
             <ul class="list">
-              <li class="list__item">Том Харди</li>
-              <li class="list__item">Мишель Уильямс</li>
-              <li class="list__item">Вуди Харрельсон</li>
-              <li class="list__item">Наоми Харрис</li>
-              <li class="list__item">Стивен Грэм</li>
+              <li class="list__item" data-translate="Tom_Hardy">Том Харди</li>
+              <li class="list__item" data-translate="Michelle_Williams">Мишель Уильямс</li>
+              <li class="list__item" data-translate="Woody_Harrelson">Вуди Харрельсон</li>
+              <li class="list__item" data-translate="Naomie_Harris">Наоми Харрис</li>
+              <li class="list__item" data-translate="Stephen_Graham">Стивен Грэм</li>
             </ul>
           </div>
           <!-- /.actors__list -->
           <div class="actors__list">
             <ul class="list">
-              <li class="list__item">Рейд Скотт</li>
-              <li class="list__item">Эд Кейр</li>
-              <li class="list__item">Шон Делани</li>
-              <li class="list__item">Уилльям Барбо</li>
-              <li class="list__item">Пегги Лу</li>
+              <li class="list__item" data-translate="Reid_Scott">Рейд Скотт</li>
+              <li class="list__item" data-translate="Ed_Kear">Эд Кейр</li>
+              <li class="list__item" data-translate="Sean_Delaney">Шон Делани</li>
+              <li class="list__item" data-translate="William_W_Barbour">Уилльям Барбо</li>
+              <li class="list__item" data-translate="Peggy_Lu">Пегги Лу</li>
             </ul>
           </div>
           <!-- /.actors__list -->
@@ -93,22 +101,22 @@
         <div class="poster__wrapper">
           <img class="poster" src="images/poster.jpg" alt="photo: poster venom 2">
           <div class="creators">
-            <h3 class="content__subtitle">Режиссер</h3>
+            <h3 class="content__subtitle" data-translate="director">Режиссер</h3>
             <ul class="list">
-              <li class="list__item">Энди Серкис</li>
+              <li class="list__item" data-translate="Andy_Serkis">Энди Серкис</li>
             </ul>
             <!-- /.list -->
-            <h3 class="content__subtitle">Сценарий</h3>
+            <h3 class="content__subtitle" data-translate="scenario">Сценарий</h3>
             <ul class="list">
-              <li class="list__item">Келли Марсел</li>
-              <li class="list__item">Том Харди</li>
+              <li class="list__item" data-translate="Kelly_Marcel">Келли Марсел</li>
+              <li class="list__item" data-translate="Tom_Hardy">Том Харди</li>
             </ul>
             <!-- /.list -->
-            <h3 class="content__subtitle">Продюсеры</h3>
+            <h3 class="content__subtitle" data-translate="producers">Продюсеры</h3>
             <ul class="list">
-              <li class="list__item">Ави Арад</li>
-              <li class="list__item">Том Харди</li>
-              <li class="list__item">Келли Марсел</li>
+              <li class="list__item" data-translate="Avi_Arad">Ави Арад</li>
+              <li class="list__item" data-translate="Tom_Hardy">Том Харди</li>
+              <li class="list__item" data-translate="Kelly_Marcel">Келли Марсел</li>
             </ul>
             <!-- /.list -->
           </div>
@@ -128,7 +136,7 @@
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
   <script src="js/main.js" type="module"></script>
-  <!-- <script src="js/hideForm.js"></script> -->
+  <script src="js/changeLanguage.js" type="module"></script>
 </body>
 
 </html>

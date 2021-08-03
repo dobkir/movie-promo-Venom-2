@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Актеры - Venom 2</title>
+  <title data-translate="actors-title">Venom 2. Актеры</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,30 +19,37 @@
       </a>
       <nav class="nav">
         <butoon class="menu__button">
-          <span class="menu__button--text">меню</span>
+          <span class="menu__button--text" data-translate="menu-menu">меню</span>
           <img class="menu__button--icon" src="images/menu.svg" alt="icon: burger menu">
         </butoon>
         <!-- /.menu__button -->
         <button class="menu__close">
-          <span class="menu__close--text">закрыть</span>
+          <span class="menu__close--text" data-translate="menu-close">закрыть</span>
           <img class="menu__close--icon" src="images/arrow.svg" alt="icon: arrow right">
         </button>
         <!-- /.menu__close -->
         <ul class="nav__menu">
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="about.html">о фильме</a>
+            <a class="nav__menu--link" data-translate="menu-about" href="about.html">о фильме</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="trailer.html">трейлер</a>
+            <a class="nav__menu--link" data-translate="menu-trailer" href="trailer.html">трейлер</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="actors.html">актеры</a>
+            <a class="nav__menu--link" data-translate="menu-actors" href="actors.html">актеры</a>
           </li>
 
           <li class="nav__menu--item">
-            <a class="nav__menu--link" href="premiere.html">премьера</a>
+            <a class="nav__menu--link" data-translate="menu-premiere" href="premiere.html">премьера</a>
+          </li>
+
+          <li class="nav__menu--item">
+            <select class="change-lang">
+              <option class="change-lang--option" value="ru" selected>RU</option>
+              <option class="change-lang--option" value="en">EN</option>
+            </select>
           </li>
         </ul>
         <!-- /.nav__menu -->
@@ -51,40 +58,41 @@
 
     <div class="content">
       <div class="col">
-        <h2 class="content__title">Актеры</h2>
-        <p class="content__text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного
+        <h2 class="content__title" data-translate="actors-content-title">Актеры</h2>
+        <p class="content__text" data-translate="movie-description">В настырном журналисте по-прежнему живет симбиот.
+          Том Харди в образе обаятельного
           суперзлодея из комиксов Marvel.</p>
 
         <div class="actors">
           <div class="actors--left__section">
-            <h3 class="content__subtitle actors__subtitle--first">В главных ролях:</h3>
+            <h3 class="content__subtitle actors__subtitle--first" data-translate="movie-starring">В главных ролях:</h3>
             <div class="actors__main">
               <div class="actors__list">
                 <ul class="list">
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Tom_Hardy_240x240.webp" width="80" height="80"
                       alt=" foto: Том Харди">
-                    <div class="actor__info">Том Харди</div>
+                    <div class="actor__info" data-translate="Tom_Hardy">Том Харди</div>
                   </li>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Michelle_Williams_240x240.webp" width="80" height="80"
                       alt="foto: Мишель Уильямс">
-                    <div class="actor__info">Мишель Уильямс</div>
+                    <div class="actor__info" data-translate="Michelle_Williams">Мишель Уильямс</div>
                   </li>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Woody_Harrelson_240x240.webp" width="80" height="80"
                       alt="foto: Вуди Харрельсон">
-                    <div class="actor__info">Вуди Харрельсон</div>
+                    <div class="actor__info" data-translate="Woody_Harrelson">Вуди Харрельсон</div>
                   </li>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Naomie_Harris_240x240.webp" width="80" height="80"
                       alt="foto: Наоми Харрис">
-                    <div class="actor__info">Наоми Харрис</div>
+                    <div class="actor__info" data-translate="Naomie_Harris">Наоми Харрис</div>
                   </li>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Stephen_Graham_240x240.webp" width="80" height="80"
                       alt="foto: Стивен Грэм">
-                    <div class="actor__info">Стивен Грэм</div>
+                    <div class="actor__info" data-translate="Stephen_Graham">Стивен Грэм</div>
                   </li>
                 </ul>
                 <!-- /.list -->
@@ -96,27 +104,27 @@
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Reid_Scott_240x240.webp" width="80" height="80"
                       alt="foto: Рейд Скотт">
-                    <div class="actor__info">Рейд Скотт</div>
+                    <div class="actor__info" data-translate="Reid_Scott">Рейд Скотт</div>
                   </li>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Ed_Kear_240x240.webp" width="80" height="80"
                       alt="foto: Эд Кейр">
-                    <div class="actor__info">Эд Кейр</div>
+                    <div class="actor__info" data-translate="Ed_Kear">Эд Кейр</div>
                   </li>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Sean_Delaney_240x240.webp" width="80" height="80"
                       alt="foto: Шон Делани">
-                    <div class="actor__info">Шон Делани</div>
+                    <div class="actor__info" data-translate="Sean_Delaney">Шон Делани</div>
                   </li>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/William_W_Barbour_240x240.webp" width="80" height="80"
                       alt="foto: Уилльям Барбо">
-                    <div class="actor__info">Уилльям Барбо</div>
+                    <div class="actor__info" data-translate="William_W_Barbour">Уилльям Барбо</div>
                   </li>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Peggy_Lu_240x240.webp" width="80" height="80"
                       alt="foto: Пегги Лу">
-                    <div class="actor__info">Пегги Лу</div>
+                    <div class="actor__info" data-translate="Peggy_Lu">Пегги Лу</div>
                   </li>
                 </ul>
                 <!-- /.list -->
@@ -129,8 +137,8 @@
 
           <div class="actors--right__section">
             <div class="actors__subtitles">
-              <h3 class="content__subtitle actors__subtitle--second">Режиссер</h3>
-              <h3 class="content__subtitle actors__subtitle--third">Продюсеры</h3>
+              <h3 class="content__subtitle actors__subtitle--second" data-translate="director">Режиссер</h3>
+              <h3 class="content__subtitle actors__subtitle--third" data-translate="producers">Продюсеры</h3>
             </div>
             <div class="actors__direction">
               <div class="actors__list">
@@ -139,20 +147,21 @@
                     <img class="actor__foto" src="images/actors/Andy_Serkis_240x240.webp" width="80" height="80"
                       alt="foto: Энди Серкис">
                     <div class="actor__info">
-                      <p class="actor__name">Энди Серкис</p>
+                      <p class="actor__name" data-translate="Andy_Serkis">Энди Серкис
+                      </p>
                     </div>
                   </li>
-                  <h3 class="content__subtitle">Сценарий и сюжет</h3>
+                  <h3 class="content__subtitle" data-translate="screenplay_by">Сценарий и сюжет</h3>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Kelly_Marcel_240x240.webp" width="80" height="80"
                       alt="foto: Келли Марсел">
-                    <div class="actor__info">Келли Марсел</div>
+                    <div class="actor__info" data-translate="Kelly_Marcel">Келли Марсел</div>
                   </li>
-                  <h3 class="content__subtitle">Сценарий и история</h3>
+                  <h3 class="content__subtitle" data-translate="story_by">Сценарий и история</h3>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Tom_Hardy_240x240.webp" width="80" height="80"
                       alt="foto: Том Харди">
-                    <div class="actor__info">Том Харди</div>
+                    <div class="actor__info" data-translate="Tom_Hardy">Том Харди</div>
                   </li>
                 </ul>
                 <!-- /.list -->
@@ -165,18 +174,18 @@
                     <img class="actor__foto" src="images/actors/Avi_Arad_240x240.webp" width="80" height="80"
                       alt="foto: Ави Арад">
                     <div class="actor__info">
-                      <p class="actor__name">Ави Арад</p>
+                      <p class="actor__name" data-translate="Avi_Arad">Ави Арад</p>
                     </div>
                   </li>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Tom_Hardy_240x240.webp" width="80" height="80"
                       alt="foto: Том Харди">
-                    <div class="actor__info">Том Харди</div>
+                    <div class="actor__info" data-translate="Tom_Hardy">Том Харди</div>
                   </li>
                   <li class="list__item actor__about">
                     <img class="actor__foto" src="images/actors/Kelly_Marcel_240x240.webp" width="80" height="80"
                       alt="foto: Келли Марсел">
-                    <div class="actor__info">Келли Марсел</div>
+                    <div class="actor__info" data-translate="Kelly_Marcel">Келли Марсел</div>
                   </li>
                 </ul>
                 <!-- /.list -->
@@ -200,6 +209,7 @@
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
   <script src="js/main.js" type="module"></script>
+  <script src="js/changeLanguage.js" type="module"></script>
 </body>
 
 </html>

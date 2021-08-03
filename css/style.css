@@ -44,6 +44,7 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
 
   list-style: none;
   z-index: 1;
@@ -51,6 +52,26 @@ img {
 
 .nav__menu--item {
   margin-right: 1.875em;
+}
+
+.change-lang {
+  width: 60px;
+  font-size: inherit;
+  color: rgba(255, 255, 255, .5);
+  background-color: inherit;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.change-lang:hover,
+.change-lang:focus {
+  color: rgba(255, 255, 255, .7);
+  border: 1px solid rgba(255, 255, 255, .7);
+}
+
+.change-lang--option {
+  color: rgba(255, 255, 255, .5);
+  background-color: #14131a;
 }
 
 .nav__menu--link {
@@ -381,7 +402,7 @@ img {
 }
 
 .order-trigger {
-  width: 150px;
+  width: 170px;
   height: 30px;
   display: block;
   margin-left: auto;
