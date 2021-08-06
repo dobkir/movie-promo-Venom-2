@@ -20,7 +20,7 @@ function changeURLLanguage() {
 }
 
 if ((window.hasOwnProperty("localStorage")) && (window.localStorage.getItem("lang") !== currentLanguage)) {
-  selectedLanguage.value = window.localStorage.getItem("lang");
+  selectedLanguage.value = window.localStorage.getItem("lang") || "ru";
   changeURLLanguage();
 }
 
