@@ -8,9 +8,9 @@ export const widgetConsultant = () => {
   hideForm.insertAdjacentHTML("beforeend", addHideForm());
   document.body.append(hideForm);
 
-  const orderTicket = document.querySelector('.order-ticket');
-  const orderTrigger = document.querySelector('.order-trigger');
-  const orderTicketForm = document.querySelector('.order-ticket__form');
+  const orderTicket = document.querySelector(".order-ticket");
+  const orderTrigger = document.querySelector(".order-trigger");
+  const orderTicketForm = document.querySelector(".order-ticket__form");
 
   /**
    * Smooth appearance of the form button 
@@ -18,46 +18,46 @@ export const widgetConsultant = () => {
    */
   setTimeout(() => {
     const formHeight = orderTicket.offsetHeight;
-    hideForm.style.bottom = -formHeight + 'px';
+    hideForm.style.bottom = -formHeight + "px";
   }, 1000);
 
   /**
    * Toggle the position of the form depending
-   * on the click on the button with the class '.order-trigger'.
+   * on the click on the button with the class ".order-trigger".
    */
-  orderTrigger.addEventListener('click', () => {
-    hideForm.classList.toggle('hide-form-active');
+  orderTrigger.addEventListener("click", () => {
+    hideForm.classList.toggle("hide-form-active");
   });
 
   /**
    * When the input value is changed, the input field label remains
    * at the top. Otherwise, move the field label to the input field.
    */
-  orderTicketForm.addEventListener('change', (event) => {
+  orderTicketForm.addEventListener("change", (event) => {
     const target = event.target;
     const label = target.labels[0];
 
     if (label && target.value) {
-      label.classList.add('order-ticket__label-focus');
+      label.classList.add("order-ticket__label-focus");
     } else {
-      label.classList.remove('order-ticket__label-focus');
+      label.classList.remove("order-ticket__label-focus");
     }
   });
 
 
 
   //===================> Sending user data to the server
-  const orderTicketFormWrapper = document.querySelector('.order-ticket__form-wrapper');
-  const orderTicketPreloaderWrapper = document.querySelector('.order-ticket__preloader-wrapper');
-  const orderTicketThanksWrapper = document.querySelector('.order-ticket__thanks-wrapper');
-  const orderTicketThanksName = document.querySelector('.order-ticket__thanks-name');
+  const orderTicketFormWrapper = document.querySelector(".order-ticket__form-wrapper");
+  const orderTicketPreloaderWrapper = document.querySelector(".order-ticket__preloader-wrapper");
+  const orderTicketThanksWrapper = document.querySelector(".order-ticket__thanks-wrapper");
+  const orderTicketThanksName = document.querySelector(".order-ticket__thanks-name");
 
   /**
    * Show preloader while sending data
    */
   const showPreloader = () => {
-    orderTicketFormWrapper.style.display = 'none';
-    orderTicketPreloaderWrapper.style.display = 'block';
+    orderTicketFormWrapper.style.display = "none";
+    orderTicketPreloaderWrapper.style.display = "block";
   }
 
   /**
@@ -67,12 +67,12 @@ export const widgetConsultant = () => {
 
     if (callBefore) callBefore();
 
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-      // to use local backend fetch('http://localhost:3000/api')
-      // directory: 'venom-backend'
-      method: 'POST',
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      // to use local backend fetch("http://localhost:3000/api")
+      // directory: "venom-backend"
+      method: "POST",
       headers: {
-        'Content-type': 'application/json; charset=UTF-8'
+        "Content-type": "application/json; charset=UTF-8"
       },
       body: JSON.stringify(data)
     }).then(response => {
@@ -84,9 +84,9 @@ export const widgetConsultant = () => {
    * Show thanks after sending data
    */
   const showThankYou = (data) => {
-    orderTicketFormWrapper.style.display = 'none';
-    orderTicketPreloaderWrapper.style.display = 'none';
-    orderTicketThanksWrapper.style.display = 'block';
+    orderTicketFormWrapper.style.display = "none";
+    orderTicketPreloaderWrapper.style.display = "none";
+    orderTicketThanksWrapper.style.display = "block";
     orderTicketThanksName.textContent = data.name;
   }
 
@@ -120,6 +120,6 @@ export const widgetConsultant = () => {
     sendData(data, showThankYou, showPreloader);
   };
 
-  orderTicketForm.addEventListener('submit', submitUserData);
+  orderTicketForm.addEventListener("submit", submitUserData);
 };
 //================== End of the widget-consultant ==================//

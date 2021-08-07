@@ -1,5 +1,3 @@
-import { translationArr } from "./translation.js";
-
 const selectedLanguage = document.querySelector(".change-lang");
 let currentLanguage = selectedLanguage.value;
 
@@ -10,6 +8,8 @@ selectedLanguage.addEventListener("change", function (event) {
   changeURLLanguage();
   location.reload();
 });
+
+// function fetchStorageLanguage()
 
 function changeURLLanguage() {
   currentLanguage = selectedLanguage.value;
@@ -22,6 +22,8 @@ function changeURLLanguage() {
 if ((window.hasOwnProperty("localStorage")) && (window.localStorage.getItem("lang") !== currentLanguage)) {
   selectedLanguage.value = window.localStorage.getItem("lang") || "ru";
   changeURLLanguage();
+
+  changeLanguage();
 }
 
 function changeLanguage() {
@@ -36,17 +38,36 @@ function changeLanguage() {
     location.reload();
   }
 
-  const translationDOMElems = document.querySelectorAll("[data-translate]");
+  fetch('https://api.jsonbin.io/b/610d60d6d5667e403a3a7f0f', {
+    headers: {
+      "secret-key": "$2b$10$65lTDH3r4YCHqsLIzTJGZ.fIzJmJPTL24xO2Ol3sH9.saBA4cwWLW"
+    }
+  })
+    .then(response => {
+      if (response.status != 200) {
+        alert("Sorry, the connection with the server has dined! We work on this.")
+        return null;
+      } else {
+        return response.json();
+      }
+    })
+    .then(translation => {
 
-  translationDOMElems.forEach(elem => {
-    for (let key in translationArr) {
-
-      if (elem.dataset.translate === key) {
-        elem.innerText = translationArr[key][hash];
-      };
-    };
-  });
+      translateDOM(translation, hash);
+    })
+    .catch(error => console.log('error', error));
 
 };
 
-changeLanguage();
+function translateDOM(translation, hash) {
+  const translationDOMElems = document.querySelectorAll("[data-translate]");
+
+  for (let elem of translationDOMElems) {
+    for (let key in translation) {
+
+      if (elem.dataset.translate === key) {
+        elem.innerText = translation[key][hash];
+      };
+    };
+  }
+}
