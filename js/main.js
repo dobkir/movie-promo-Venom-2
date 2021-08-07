@@ -16,7 +16,7 @@ for (let i = 0; i < navLink.length; i++)
 //========= End of active nav link on the corresponding page ========//
 
 // Show the widget consultant on all of the pages except premiere.html and privacy-rus.html
-if (location.pathname !== "/premiere.html" && location.pathname !== "/privacy-rus.html") {
+if (!window.location.pathname.includes("premiere.html") && !window.location.pathname.includes("privacy-rus.html")) {
   widgetConsultant();
 }
 
