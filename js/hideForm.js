@@ -36,7 +36,7 @@ export const addHideForm = () => {
       <button data-translate="form-send">Отправить</button>
     </fieldset>
     <div class="order-ticket__preloader-wrapper">
-      <video loop muted autoplay playsinline src="images/6.mp4" type="video/mp4"></video>
+      <video loop muted autoplay playsinline src="images/sendFormVideo.mp4" type="video/mp4"></video>
     </div>
     <fieldset class="order-ticket__thanks-wrapper">
       <legend data-translate="form-thanks">Спасибо <span class="order-ticket__thanks-name"

@@ -9,7 +9,17 @@ selectedLanguage.addEventListener("change", function (event) {
   location.reload();
 });
 
-// function fetchStorageLanguage()
+export function fetchStorageLanguage() {
+  if (
+    (window.hasOwnProperty("localStorage"))
+    && (window.localStorage.getItem("lang")
+      !== currentLanguage)
+  ) {
+    selectedLanguage.value = window.localStorage.getItem("lang") || "ru";
+    changeURLLanguage();
+    changeLanguage();
+  }
+}
 
 function changeURLLanguage() {
   currentLanguage = selectedLanguage.value;
@@ -19,12 +29,7 @@ function changeURLLanguage() {
   location.href = `${window.location.pathname}#${currentLanguage}`;
 }
 
-if ((window.hasOwnProperty("localStorage")) && (window.localStorage.getItem("lang") !== currentLanguage)) {
-  selectedLanguage.value = window.localStorage.getItem("lang") || "ru";
-  changeURLLanguage();
-
-  changeLanguage();
-}
+// fetchStorageLanguage();
 
 function changeLanguage() {
   let hash = window.location.hash;
@@ -52,7 +57,6 @@ function changeLanguage() {
       }
     })
     .then(translation => {
-
       translateDOM(translation, hash);
     })
     .catch(error => console.log('error', error));

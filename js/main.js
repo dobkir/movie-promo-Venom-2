@@ -1,4 +1,6 @@
+import { fetchStorageLanguage } from "./changeLanguage.js";
 import { widgetConsultant } from "./widgetConsultant.js";
+import { createIframe } from "./youtubeFrame.js";
 
 //============ Active nav link on the corresponding page ============//
 
@@ -15,9 +17,17 @@ for (let i = 0; i < navLink.length; i++)
 
 //========= End of active nav link on the corresponding page ========//
 
+// Connecting the fetching of the translation to the selected language
+fetchStorageLanguage();
+
 // Show the widget consultant on all of the pages except premiere.html and privacy-rus.html
 if (!window.location.pathname.includes("premiere.html") && !window.location.pathname.includes("privacy-rus.html")) {
   widgetConsultant();
+}
+
+// Show the youtube IFrame when a page has in pathname trailer.html
+if (window.location.pathname.includes("trailer.html")) {
+  createIframe();
 }
 
 //======================= Mobile menu toggle =======================//

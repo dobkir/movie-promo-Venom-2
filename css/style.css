@@ -351,11 +351,43 @@ img {
   height: 70vh;
 }
 
-.iframe {
+.youtube {
   width: 80%;
   height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+
+  position: relative;
+
+  overflow: hidden;
+  transition: all 200ms ease-out;
 }
 
+.youtube .play {
+  margin: auto;
+  height: 50px;
+  width: 69px;
+
+  background: url('../images/youtube-play-btn.png') no-repeat;
+  background-position: 0 -50px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: none;
+}
+
+.youtube:hover .play {
+  background-position: 0 0;
+}
 
 /* =================== End of Trailer page ==================== */
 .menu__button {
