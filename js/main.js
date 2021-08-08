@@ -1,4 +1,4 @@
-import { fetchStorageLanguage } from "./changeLanguage.js";
+import { fetchStorageLanguage, toggleETimer } from "./changeLanguage.js";
 import { widgetConsultant } from "./widgetConsultant.js";
 import { createIframe } from "./youtubeFrame.js";
 
@@ -29,6 +29,9 @@ if (!window.location.pathname.includes("premiere.html") && !window.location.path
 if (window.location.pathname.includes("trailer.html")) {
   createIframe();
 }
+
+// Add to execute the rule of text translate for eTimer
+if (window.location.pathname.includes("premiere.html")) toggleETimer(location.hash);
 
 //======================= Mobile menu toggle =======================//
 

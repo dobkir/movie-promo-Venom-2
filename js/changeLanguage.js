@@ -75,3 +75,23 @@ function translateDOM(translation, hash) {
     };
   }
 }
+
+// The Rule of text translate for eTimer
+export function toggleETimer(hash) {
+  const eTimerRu = document.querySelector(".eTimerRu");
+  const eTimerEn = document.querySelector(".eTimerEn");
+
+  switch (hash) {
+    case "#ru":
+      eTimerRu.style.display = "inline-block";
+      eTimerEn.style.display = "none";
+      break;
+    case "#en":
+      eTimerRu.style.display = "none";
+      eTimerEn.style.display = "inline-block";
+      break;
+    default:
+      eTimerRu.style.display = "inline-block";
+      eTimerEn.style.display = "none";
+  }
+}
