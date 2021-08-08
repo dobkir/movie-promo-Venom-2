@@ -1,12 +1,10 @@
 const selectedLanguage = document.querySelector(".change-lang");
 let currentLanguage = selectedLanguage.value;
 
-const possibleLanguages = ["en", "ru"];
-
 selectedLanguage.addEventListener("change", function (event) {
   event.stopPropagation();
   changeURLLanguage();
-  location.reload();
+  window.location.reload();
 });
 
 export function fetchStorageLanguage() {
@@ -17,7 +15,7 @@ export function fetchStorageLanguage() {
   ) {
     selectedLanguage.value = window.localStorage.getItem("lang") || "ru";
     changeURLLanguage();
-    changeLanguage();
+    fetchingTextTranslation();
   }
 }
 
@@ -26,31 +24,22 @@ function changeURLLanguage() {
 
   if (window.hasOwnProperty("localStorage"))
     window.localStorage.setItem("lang", currentLanguage);
-  location.href = `${window.location.pathname}#${currentLanguage}`;
+  window.location.hash = `#${currentLanguage}`;
 }
 
-// fetchStorageLanguage();
-
-function changeLanguage() {
+// Request for API for the text translation to the desired language
+function fetchingTextTranslation() {
   let hash = window.location.hash;
   hash = hash.substr(1);
 
-  // If the pathname has an error, then use a default pathname: (#ru)
-  // The best practice, in this case, is to use the geo-position of a user browser.
-  if (!possibleLanguages.includes(hash)) {
-    location.href = window.location.pathname + "#ru";
-    currentLanguage = hash;
-    location.reload();
-  }
-
-  fetch('https://api.jsonbin.io/b/610d60d6d5667e403a3a7f0f', {
+  fetch('https://api.jsonbin.io/b/610fe7b1d5667e403a3b8dcc', {
     headers: {
       "secret-key": "$2b$10$65lTDH3r4YCHqsLIzTJGZ.fIzJmJPTL24xO2Ol3sH9.saBA4cwWLW"
     }
   })
     .then(response => {
       if (response.status != 200) {
-        alert("Sorry, the connection with the server has dined! We work on this.")
+        alert(`HTTP-Error: ${response.status}. We work on it`);
         return null;
       } else {
         return response.json();
@@ -59,9 +48,8 @@ function changeLanguage() {
     .then(translation => {
       translateDOM(translation, hash);
     })
-    .catch(error => console.log('error', error));
-
-};
+    .catch(error => alert(`Oops, any problem here: ${error.name}. ${error.message}`));
+}
 
 function translateDOM(translation, hash) {
   const translationDOMElems = document.querySelectorAll("[data-translate]");
@@ -72,7 +60,7 @@ function translateDOM(translation, hash) {
       if (elem.dataset.translate === key) {
         elem.innerText = translation[key][hash];
       };
-    };
+    }
   }
 }
 
