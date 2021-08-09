@@ -63,7 +63,8 @@ Link to the Swiper official docs: [https://swiperjs.com/](https://swiperjs.com/)
 - [![{JSON}Placeholder](https://img.shields.io/badge/{JSON}Placeholder-DBEAFE?style=for-the-badge&logo={JSON}Placeholder&logoColor=DBEAFE)](https://jsonplaceholder.typicode.com/)
 
 - IDE<br>
-![VSCode](https://img.icons8.com/color/48/000000/visual-studio-code-2019.png) [VSCode](https://code.visualstudio.com/)
+![VSCode](https://img.icons8.com/color/48/000000/visual-studio-code-2019.png)<br>
+ [VSCode](https://code.visualstudio.com/)
 
 <!-- LICENSE -->
 ## License
