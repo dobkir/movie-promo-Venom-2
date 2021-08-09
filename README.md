@@ -54,13 +54,10 @@ Link to the Swiper official docs: [https://swiperjs.com/](https://swiperjs.com/)
 ![JavaScript](https://img.shields.io/badge/JavaScript-25.7%25-f1e05a?logo=JavaScript&logoColor=f1e05a&style=for-the-badge)<br>
 ![CSS3](https://img.shields.io/badge/CSS3-9.1%25-563d7c?logo=CSS3&logoColor=563d7c&style=for-the-badge)
 
-- [![jQuery library](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)](https://jquery.com/)
-
-- [![FancyBox](https://img.shields.io/badge/FancyBox-00C8B0?style=for-the-badge&logo=FancyBox&logoColor=00C8B0)](https://fancyapps.com/)
-
-- [![{}JSONBIN.io](https://img.shields.io/badge/JSONBIN-2568ed?style=for-the-badge&logo=JSONBIN&logoColor=2568ed)](https://jsonbin.io/)
-
-- [![{JSON}Placeholder](https://img.shields.io/badge/{JSON}Placeholder-DBEAFE?style=for-the-badge&logo={JSON}Placeholder&logoColor=DBEAFE)](https://jsonplaceholder.typicode.com/)
+[![jQuery library](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)](https://jquery.com/)
+[![FancyBox](https://img.shields.io/badge/FancyBox-00C8B0?style=for-the-badge&logo=FancyBox&logoColor=00C8B0)](https://fancyapps.com/)
+[![{}JSONBIN.io](https://img.shields.io/badge/JSONBIN-2568ed?style=for-the-badge&logo=JSONBIN&logoColor=2568ed)](https://jsonbin.io/)
+[![{JSON}Placeholder](https://img.shields.io/badge/{JSON}Placeholder-DBEAFE?style=for-the-badge&logo={JSON}Placeholder&logoColor=DBEAFE)](https://jsonplaceholder.typicode.com/)
 
 - IDE<br>
 ![VSCode](https://img.icons8.com/color/48/000000/visual-studio-code-2019.png)<br>
