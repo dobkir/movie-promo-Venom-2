@@ -63,7 +63,7 @@ Link to the Swiper official docs: [https://swiperjs.com/](https://swiperjs.com/)
 - [![{JSON}Placeholder](https://img.shields.io/badge/{JSON}Placeholder-DBEAFE?style=for-the-badge&logo={JSON}Placeholder&logoColor=DBEAFE)](https://jsonplaceholder.typicode.com/)
 
 - IDE<br>
-[![VSCode](https://img.icons8.com/color/48/000000/visual-studio-code-2019.png)] VSCode[![VSCode](https://img.shields.io/badge/VSCode-0066B8?style=for-the-badge&logo=VSCode&logoColor=0066B8)](https://code.visualstudio.com/)
+![VSCode](https://img.icons8.com/color/48/000000/visual-studio-code-2019.png) [VSCode](https://code.visualstudio.com/)
 
 <!-- LICENSE -->
 ## License
@@ -81,8 +81,6 @@ Project Link: [https://github.com/dobkir/movie-promo-Venom-2](https://github.com
 ## Acknowledgements
 - [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 - [ICONS8](https://icons8.com/)
-- [ICONS8](https://icons8.com/)
-- [Visual Studio Code 2019 icon by Icons8](https://icons8.com/icon/9OGIyU8hrxW5/visual-studio-code-2019)
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
 - [GitHub Pages](https://pages.github.com)
