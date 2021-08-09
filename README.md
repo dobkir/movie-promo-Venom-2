@@ -20,7 +20,7 @@ This is a template for the promo website of the movie premiere "Venom-2".
 
 The site has a responsive design and is adapted for devices with different screen sizes.
 
-Pure template on html5/css3. It was created without a task runner, without a framework.
+Pure template on HTML5/CSS3. It was created without a task runner, without a framework.
 
 [{}JSONBIN.io](https://jsonbin.io/). It was used as a server for language translation.
 JSONBin.io provides a simple REST interface to store & retrieve your JSON data from the cloud. 
@@ -34,7 +34,7 @@ It was used for fake POST requests after submitting the consultation form.
 It is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page.
 It is used for the trailer popup on the main page of the website (index.html).
 
-The [jQuery library](https://jquery.com/) is needed for the work of FancyBox.
+The [jQuery library](https://jquery.com/) was used for the work of FancyBox.
 <!-- Swiper Slider library is the easy way to create and manage sliders on a website. It uses in this project.<br> 
 Link to the Swiper official docs: [https://swiperjs.com/](https://swiperjs.com/)<br> -->
 
@@ -54,9 +54,10 @@ Link to the Swiper official docs: [https://swiperjs.com/](https://swiperjs.com/)
 ![JavaScript](https://img.shields.io/badge/JavaScript-25.7%25-f1e05a?logo=JavaScript&logoColor=f1e05a&style=for-the-badge)<br>
 ![CSS3](https://img.shields.io/badge/CSS3-9.1%25-563d7c?logo=CSS3&logoColor=563d7c&style=for-the-badge)
 
-[![jQuery library](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)](https://jquery.com/)
-[![FancyBox](https://img.shields.io/badge/FancyBox-00C8B0?style=for-the-badge&logo=FancyBox&logoColor=00C8B0)](https://fancyapps.com/)
-[![{}JSONBIN.io](https://img.shields.io/badge/JSONBIN-2568ed?style=for-the-badge&logo=JSONBIN&logoColor=2568ed)](https://jsonbin.io/)
+- Through:<br>
+[![jQuery library](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)](https://jquery.com/)<br>
+[![FancyBox](https://img.shields.io/badge/FancyBox-00C8B0?style=for-the-badge&logo=FancyBox&logoColor=00C8B0)](https://fancyapps.com/)<br>
+[![{}JSONBIN.io](https://img.shields.io/badge/JSONBIN-2568ed?style=for-the-badge&logo=JSONBIN&logoColor=2568ed)](https://jsonbin.io/)<br>
 [![{JSON}Placeholder](https://img.shields.io/badge/{JSON}Placeholder-DBEAFE?style=for-the-badge&logo={JSON}Placeholder&logoColor=DBEAFE)](https://jsonplaceholder.typicode.com/)
 
 - IDE<br>
