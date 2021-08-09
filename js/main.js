@@ -21,14 +21,11 @@ for (let i = 0; i < navLink.length; i++)
 fetchStorageLanguage();
 
 // Show the widget consultant on all of the pages except premiere.html and privacy-rus.html
-if (!window.location.pathname.includes("premiere.html") && !window.location.pathname.includes("privacy-rus.html")) {
-  widgetConsultant();
-}
+if (!window.location.pathname.includes("premiere.html") &&
+  !window.location.pathname.includes("privacy-rus.html")) widgetConsultant();
 
 // Show the youtube IFrame when a page has in pathname trailer.html
-if (window.location.pathname.includes("trailer.html")) {
-  createIframe();
-}
+if (window.location.pathname.includes("trailer.html")) createIframe();
 
 // Add to execute the rule of text translate for eTimer
 if (window.location.pathname.includes("premiere.html")) toggleETimer(location.hash);

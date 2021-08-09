@@ -149,11 +149,11 @@ img {
 
 .blood {
   background: url('../images/blood.png') no-repeat top right 40%,
-    url('../images/background.jpg') no-repeat 0 0 / cover;
+    url('../images/background.webp') no-repeat 0 0 / cover;
 }
 
 .primary-bg {
-  background: url('../images/background.jpg') no-repeat 0 0 / cover;
+  background: url('../images/background.webp') no-repeat 0 0 / cover;
 }
 
 /* ======================= about page ======================= */
@@ -219,7 +219,7 @@ img {
   height: 12.813em;
   width: 22.813em;
 
-  background: url('../images/trailer-cover.jpg') no-repeat center / contain;
+  background: url('../images/trailer-cover.webp') no-repeat center / contain;
   border-radius: .32em;
 }
 
@@ -468,7 +468,6 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 auto;
-
 }
 
 .order-ticket__description {
