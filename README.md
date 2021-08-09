@@ -51,23 +51,19 @@ Link to the Swiper official docs: [https://swiperjs.com/](https://swiperjs.com/)
 ![Main language][main-language-shield]
 
 - Others<br>
-[![JavaScript](https://img.shields.io/badge/JavaScript-25.7%25-f1e05a?logo=JavaScript&logoColor=f1e05a&style=for-the-badge)]<br>
-[![CSS3](https://img.shields.io/badge/CSS3-9.1%25-563d7c?logo=CSS3&logoColor=563d7c&style=for-the-badge)]
+![JavaScript](https://img.shields.io/badge/JavaScript-25.7%25-f1e05a?logo=JavaScript&logoColor=f1e05a&style=for-the-badge)<br>
+![CSS3](https://img.shields.io/badge/CSS3-9.1%25-563d7c?logo=CSS3&logoColor=563d7c&style=for-the-badge)
 
-- jQuery library<br>
-[![jQuery library](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)](https://jquery.com/)
+- [![jQuery library](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)](https://jquery.com/)
 
-- FancyBox library<br>
-[![FancyBox](https://img.shields.io/badge/FancyBox-00C8B0?style=for-the-badge&logo=FancyBox&logoColor=00C8B0)](https://fancyapps.com/)
+- [![FancyBox](https://img.shields.io/badge/FancyBox-00C8B0?style=for-the-badge&logo=FancyBox&logoColor=00C8B0)](https://fancyapps.com/)
 
-- {}JSONBIN<br>
-[![{}JSONBIN.io](https://img.shields.io/badge/JSONBIN-2568ed?style=for-the-badge&logo=JSONBIN&logoColor=2568ed)](https://jsonbin.io/)
+- [![{}JSONBIN.io](https://img.shields.io/badge/JSONBIN-2568ed?style=for-the-badge&logo=JSONBIN&logoColor=2568ed)](https://jsonbin.io/)
 
-- {JSON}Placeholder<br>
-[![{JSON}Placeholder](https://img.shields.io/badge/{JSON}Placeholder-DBEAFE?style=for-the-badge&logo={JSON}Placeholder&logoColor=DBEAFE)](https://jsonplaceholder.typicode.com/)
+- [![{JSON}Placeholder](https://img.shields.io/badge/{JSON}Placeholder-DBEAFE?style=for-the-badge&logo={JSON}Placeholder&logoColor=DBEAFE)](https://jsonplaceholder.typicode.com/)
 
-- IDE<br>#0066B8
-![VSCode](https://emoji.gg/assets/emoji/2829_VSCode.png) VSCode[![VSCode](https://img.shields.io/badge/VSCode-0066B8?style=for-the-badge&logo=VSCode&logoColor=0066B8)](https://code.visualstudio.com/)
+- IDE<br>
+[![VSCode](https://img.icons8.com/color/48/000000/visual-studio-code-2019.png)] VSCode[![VSCode](https://img.shields.io/badge/VSCode-0066B8?style=for-the-badge&logo=VSCode&logoColor=0066B8)](https://code.visualstudio.com/)
 
 <!-- LICENSE -->
 ## License
@@ -77,14 +73,16 @@ Distributed under the MIT License. See [LICENSE](LICENSE.txt) for more informati
 <!-- CONTACT -->
 ## Contact
 
-:email: [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:p.kirillov2020@gmail.com)](mailto:p.kirillov2020@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:p.kirillov2020@gmail.com)](mailto:p.kirillov2020@gmail.com)
 
 Project Link: [https://github.com/dobkir/movie-promo-Venom-2](https://github.com/dobkir/movie-promo-Venom-2)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 - [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [emoji.gg](https://emoji.gg/)
+- [ICONS8](https://icons8.com/)
+- [ICONS8](https://icons8.com/)
+- [Visual Studio Code 2019 icon by Icons8](https://icons8.com/icon/9OGIyU8hrxW5/visual-studio-code-2019)
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
 - [GitHub Pages](https://pages.github.com)
