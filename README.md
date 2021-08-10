@@ -100,7 +100,7 @@ Project Link: [https://github.com/dobkir/movie-promo-Venom-2](https://github.com
 [linkedin-url]: https://www.linkedin.com/in/pavel-kirillov-dobkir
 [repo-size-shield]: https://img.shields.io/github/repo-size/dobkir/movie-promo-Venom-2.svg?style=for-the-badge
 [languages-shield]: https://img.shields.io/github/languages/count/dobkir/movie-promo-Venom-2.svg?style=for-the-badge
-[main-language-shield]: https://img.shields.io/github/languages/top/dobkir/movie-promo-Venom-2.svg?style=for-the-badge&color=563d7c
+[main-language-shield]: https://img.shields.io/github/languages/top/dobkir/movie-promo-Venom-2.svg?style=for-the-badge&color=e34c26
 [product-screenshot-main_page]: https://github.com/dobkir/trailers/blob/master/venom-2_trailer/venom-2_main.gif
 [product-screenshot-all_pages]: https://github.com/dobkir/trailers/blob/master/venom-2_trailer/venom-2_all.gif
 
