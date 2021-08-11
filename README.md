@@ -35,8 +35,6 @@ It is a tool for displaying images, html content and multi-media in a Mac-style 
 It is used for the trailer popup on the main page of the website (index.html).
 
 The [jQuery library](https://jquery.com/) was used for the work of FancyBox.
-<!-- Swiper Slider library is the easy way to create and manage sliders on a website. It uses in this project.<br> 
-Link to the Swiper official docs: [https://swiperjs.com/](https://swiperjs.com/)<br> -->
 
 <!-- LINK TO WEBSITE -->
 ## [Come here](https://dobkir.github.io/movie-promo-Venom-2/) to watch this website on your Web Browser
