@@ -42,7 +42,7 @@ jQuery(document).ready(function () {
     etDate: "16.09.2021.0.0",
     etTitleText: "Until the premiere of the film is left:",
     etTitleSize: 30,
-    etShowSign: 1,
+    etShowSign: 2,
     etSep: ":",
     etFontFamily: "Trebuchet MS",
     etTextColor: "rgba(255, 255, 255, .8)",
